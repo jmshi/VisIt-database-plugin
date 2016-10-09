@@ -1,0 +1,480 @@
+<?xml version="1.0" ?>
+<!DOCTYPE Xdmf SYSTEM "Xdmf.dtd" []>
+<Xdmf Version="2.0">
+<Domain>
+<Grid Name="Mesh" GridType="Collection">
+  <Grid Name="MeshBlock0" GridType="Uniform">
+    <Topology TopologyType="3DRectMesh" NumberOfElements="17 17 33"/>
+    <Geometry GeometryType="VXVYVZ">
+      <DataItem ItemType="HyperSlab" Dimensions="33">
+        <DataItem Dimensions="3 2" NumberType="Int"> 0 0 1 1 1 33 </DataItem>
+        <DataItem Dimensions="8 33" Format="HDF"> HGB.out2.00300.athdf:/x1f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 0 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x2f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 0 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x3f </DataItem>
+      </DataItem>
+    </Geometry>
+    <Attribute Name="rho" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 0 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 0 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 0 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 3 0 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 0 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 0 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 0 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+  </Grid>
+  <Grid Name="MeshBlock1" GridType="Uniform">
+    <Topology TopologyType="3DRectMesh" NumberOfElements="17 17 33"/>
+    <Geometry GeometryType="VXVYVZ">
+      <DataItem ItemType="HyperSlab" Dimensions="33">
+        <DataItem Dimensions="3 2" NumberType="Int"> 1 0 1 1 1 33 </DataItem>
+        <DataItem Dimensions="8 33" Format="HDF"> HGB.out2.00300.athdf:/x1f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 1 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x2f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 1 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x3f </DataItem>
+      </DataItem>
+    </Geometry>
+    <Attribute Name="rho" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 1 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 1 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 1 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 3 1 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 1 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 1 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 1 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+  </Grid>
+  <Grid Name="MeshBlock2" GridType="Uniform">
+    <Topology TopologyType="3DRectMesh" NumberOfElements="17 17 33"/>
+    <Geometry GeometryType="VXVYVZ">
+      <DataItem ItemType="HyperSlab" Dimensions="33">
+        <DataItem Dimensions="3 2" NumberType="Int"> 2 0 1 1 1 33 </DataItem>
+        <DataItem Dimensions="8 33" Format="HDF"> HGB.out2.00300.athdf:/x1f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 2 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x2f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 2 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x3f </DataItem>
+      </DataItem>
+    </Geometry>
+    <Attribute Name="rho" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 2 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 2 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 2 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 3 2 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 2 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 2 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 2 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+  </Grid>
+  <Grid Name="MeshBlock3" GridType="Uniform">
+    <Topology TopologyType="3DRectMesh" NumberOfElements="17 17 33"/>
+    <Geometry GeometryType="VXVYVZ">
+      <DataItem ItemType="HyperSlab" Dimensions="33">
+        <DataItem Dimensions="3 2" NumberType="Int"> 3 0 1 1 1 33 </DataItem>
+        <DataItem Dimensions="8 33" Format="HDF"> HGB.out2.00300.athdf:/x1f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 3 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x2f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 3 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x3f </DataItem>
+      </DataItem>
+    </Geometry>
+    <Attribute Name="rho" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 3 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 3 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 3 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 3 3 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 3 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 3 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 3 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+  </Grid>
+  <Grid Name="MeshBlock4" GridType="Uniform">
+    <Topology TopologyType="3DRectMesh" NumberOfElements="17 17 33"/>
+    <Geometry GeometryType="VXVYVZ">
+      <DataItem ItemType="HyperSlab" Dimensions="33">
+        <DataItem Dimensions="3 2" NumberType="Int"> 4 0 1 1 1 33 </DataItem>
+        <DataItem Dimensions="8 33" Format="HDF"> HGB.out2.00300.athdf:/x1f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 4 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x2f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 4 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x3f </DataItem>
+      </DataItem>
+    </Geometry>
+    <Attribute Name="rho" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 4 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 4 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 4 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 3 4 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 4 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 4 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 4 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+  </Grid>
+  <Grid Name="MeshBlock5" GridType="Uniform">
+    <Topology TopologyType="3DRectMesh" NumberOfElements="17 17 33"/>
+    <Geometry GeometryType="VXVYVZ">
+      <DataItem ItemType="HyperSlab" Dimensions="33">
+        <DataItem Dimensions="3 2" NumberType="Int"> 5 0 1 1 1 33 </DataItem>
+        <DataItem Dimensions="8 33" Format="HDF"> HGB.out2.00300.athdf:/x1f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 5 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x2f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 5 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x3f </DataItem>
+      </DataItem>
+    </Geometry>
+    <Attribute Name="rho" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 5 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 5 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 5 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 3 5 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 5 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 5 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 5 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+  </Grid>
+  <Grid Name="MeshBlock6" GridType="Uniform">
+    <Topology TopologyType="3DRectMesh" NumberOfElements="17 17 33"/>
+    <Geometry GeometryType="VXVYVZ">
+      <DataItem ItemType="HyperSlab" Dimensions="33">
+        <DataItem Dimensions="3 2" NumberType="Int"> 6 0 1 1 1 33 </DataItem>
+        <DataItem Dimensions="8 33" Format="HDF"> HGB.out2.00300.athdf:/x1f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 6 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x2f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 6 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x3f </DataItem>
+      </DataItem>
+    </Geometry>
+    <Attribute Name="rho" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 6 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 6 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 6 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 3 6 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 6 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 6 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 6 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+  </Grid>
+  <Grid Name="MeshBlock7" GridType="Uniform">
+    <Topology TopologyType="3DRectMesh" NumberOfElements="17 17 33"/>
+    <Geometry GeometryType="VXVYVZ">
+      <DataItem ItemType="HyperSlab" Dimensions="33">
+        <DataItem Dimensions="3 2" NumberType="Int"> 7 0 1 1 1 33 </DataItem>
+        <DataItem Dimensions="8 33" Format="HDF"> HGB.out2.00300.athdf:/x1f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 7 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x2f </DataItem>
+      </DataItem>
+      <DataItem ItemType="HyperSlab" Dimensions="17">
+        <DataItem Dimensions="3 2" NumberType="Int"> 7 0 1 1 1 17 </DataItem>
+        <DataItem Dimensions="8 17" Format="HDF"> HGB.out2.00300.athdf:/x3f </DataItem>
+      </DataItem>
+    </Geometry>
+    <Attribute Name="rho" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 7 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 7 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 7 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="vel3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 3 7 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="4 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/prim </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B1" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 0 7 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B2" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 1 7 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+    <Attribute Name="B3" Center="Cell">
+      <DataItem ItemType="HyperSlab" Dimensions="16 16 32">
+        <DataItem Dimensions="3 5" NumberType="Int"> 2 7 0 0 0 1 1 1 1 1 1 1 16 16 32 </DataItem>
+        <DataItem Dimensions="3 8 16 16 32" Format="HDF"> HGB.out2.00300.athdf:/B </DataItem>
+      </DataItem>
+    </Attribute>
+  </Grid>
+</Grid>
+</Domain>
+</Xdmf>

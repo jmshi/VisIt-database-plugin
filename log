@@ -1,0 +1,17 @@
+
+ - [x] generate the skeleton plugins for development. 
+
+ - [x] add visit source code which has examples of all DBplugins; 
+   remove old FLASH plugin files downloaded from its site.
+
+ - [x] add HDFViewer: open a file with   hdfviewer filename &
+
+ - [x] add example amr data in folder data/ 
+   (amr.out1.00000.athdf along with xdmf and rst files) 
+   It is derived from dmr initial setup with root level resolution 64x16; 
+   two level refinement down; total 19 meshblocks with blocksize 16x16. 
+
+ - [x] add a standalone reader code for reading the restart(checkpoint) dump in folder reader/
+
+ - [ ] incorporate the reader in the avtFileFormat.C with VTK
+

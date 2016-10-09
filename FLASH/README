@@ -1,0 +1,44 @@
+
+    **********************************************************************
+    *  This README was copied from a README sent with the source of a 
+    *  flash plugin for some VisIt 1.6.x.  It's been changed a bit.
+    **********************************************************************
+
+    PREPARATION
+    -----------
+    Directory "FLASH" contains this README file and the source code for the 
+    VisIt FLASH database plugin.  Place directory "FLASH" in the directory 
+    where you want to build the plugin.  You'll need HDF5 installed somewhere 
+    as well.
+
+    Note that if you run VisIt in client/server mode, you will need to
+    make sure to install the plugin on both the client machine (usually
+    your desktop machine) and the server.
+
+    BUILDING
+    --------
+    The first two of the three commands, below, are part of the VisIt release
+    package, and are in <visit_dir>/bin.
+    
+    Execute them in the order shown.  They will build the plugin in this 
+    "FLASH" directory, and install the plugin libraries in 
+    ~/.visit/<arch>/plugins/databases.
+        % xml2info -clobber FLASH.xml
+        % xml2makefile -clobber FLASH.xml
+        % make
+    (Instead of "make", you may have to execute 
+    "make HDF5_INCLUDE=-I<HDF5_dir>/include HDF5_LIB=<HDF5_dir>/lib/libhdf5.a".)
+    To uninstall the plugin from the directory in which this README file 
+    exists, issue the following command:
+        % make clean
+    You can then re-install it by re-running the commands used to install
+    it.
+
+    When you start VisIt, it looks in ~/.visit/<arch>/plugins for any
+    plugins you have installed in your home directory and then it looks
+    in the public installation directory. In this way, plugins in your
+    home directory override plugins in the public directory. You can
+    disable this behavior by adding '-publicpluginsonly' on the command
+    line to launch VisIt.
+
+    If you have problems, email visit-help@llnl.gov
