@@ -33,7 +33,7 @@ typedef struct LogicalLocation {
   static bool Greater(const LogicalLocation & left, const LogicalLocation &right)
     { return left.level > right.level; };
 
-} LogicalLocation;
+}LogicalLocation;
 
 //--------------------------------------------------------------------------------------
 //! \class MeshBlockTree

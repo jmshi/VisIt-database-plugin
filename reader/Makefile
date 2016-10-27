@@ -2,7 +2,7 @@
 
 CXX := icc
 CPPFLAGS := 
-CXXFLAGS := -O3 
+CXXFLAGS := -O0 -g# -O3 
 LDFLAGS  := 
 LDLIBS   := 
 

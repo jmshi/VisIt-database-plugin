@@ -68,7 +68,7 @@ class avtATHENAFileFormat : public avtSTMDFileFormat
 {
   public:
                        avtATHENAFileFormat(const char *);
-    virtual           ~avtATHENAFileFormat() {;};
+             ~avtATHENAFileFormat() {;};
 
     //
     // This is used to return unconvention data -- ranging from material
@@ -85,6 +85,7 @@ class avtATHENAFileFormat : public avtSTMDFileFormat
     //
     // virtual int         GetCycle(void);
     //
+    virtual void           PopulateDatabaseMetaData(avtDatabaseMetaData *);
 
     virtual const char    *GetType(void)   { return "ATHENA"; };
     virtual void           FreeUpResources(void);
@@ -93,10 +94,22 @@ class avtATHENAFileFormat : public avtSTMDFileFormat
     virtual vtkDataArray  *GetVar(int, const char *);
     virtual vtkDataArray  *GetVectorVar(int, const char *);
 
+	void           OpenFile(const char*);
+
   protected:
     // DATA MEMBERS
+	float time;
+	//int nb; // # of meshblocks
+	//int nx1,nx2,nx3; //coord size
+	//int ncells1,ncells2,ncells3; // var size
+	//int nvar; // # of var
+    int ndata[8];// in the order shown above
+	float *x1,*x2,*x3; //coord system
+	float *var; //data var
+	// file handler
+	FILE *fh;
+	bool fopened;
 
-    virtual void           PopulateDatabaseMetaData(avtDatabaseMetaData *);
 };
 
 

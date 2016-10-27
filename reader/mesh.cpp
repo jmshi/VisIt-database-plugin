@@ -321,21 +321,23 @@ Mesh::Mesh(ParameterInput *pin, IOWrapper& resfile, int flag)
 
   int num;
   for(num=nbs;num<=nbe;num++) {
+	char *mbdata_current;
     int buff_os = datasize * (num-nbs);
+	mbdata_current = mbdata+buff_os;
 	// update block_size.x1min etc. block_bcs etc.
     SetBlockSizeAndBoundaries(loclist[num], block_size, block_bcs);
 	// update x1f x2f x3f
     AllocateAndSetBasicCoordinates(is,ie,js,je,ks,ke,loclist[num],block_size,block_bcs);
 	// 2) allocate phydro->u  pfield->b
 	int os = 0;
-	memcpy(u.data(), &mbdata[os],u.GetSizeInBytes());
+	memcpy(u.data(), &mbdata_current[os],u.GetSizeInBytes());
 	os += u.GetSizeInBytes();
 	if(magnetic) {
-	  memcpy(b.x1f.data(), &(mbdata[os]), b.x1f.GetSizeInBytes());
+	  memcpy(b.x1f.data(), &(mbdata_current[os]), b.x1f.GetSizeInBytes());
 	  os += b.x1f.GetSizeInBytes();
-	  memcpy(b.x2f.data(), &(mbdata[os]), b.x2f.GetSizeInBytes());
+	  memcpy(b.x2f.data(), &(mbdata_current[os]), b.x2f.GetSizeInBytes());
 	  os += b.x2f.GetSizeInBytes();
-	  memcpy(b.x3f.data(), &(mbdata[os]), b.x3f.GetSizeInBytes());
+	  memcpy(b.x3f.data(), &(mbdata_current[os]), b.x3f.GetSizeInBytes());
 	  os += b.x3f.GetSizeInBytes();
 	}
 
