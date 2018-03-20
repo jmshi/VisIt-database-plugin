@@ -10,4 +10,4 @@ modularity. It will soon be released to public.
 ## [VisIt](https://wci.llnl.gov/simulation/computer-codes/visit/)
 VisIt is an Open Source, interactive, scalable, visualization, animation and analysis tool, widely used in many scientific subjects including Astrophysics.
 
-![visit_ui](/Selection_123.png)
+![visit_ui](/Selection_124.png)
